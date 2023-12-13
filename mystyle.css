@@ -1,0 +1,95 @@
+ /* Resetting default margin and padding */
+ body {
+    background-color: #FFFBEB;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+     }
+ body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+ .navbar {
+    position: fixed;
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    display: flex;
+  }
+  .bignavbar {
+    display: flex;
+    flex-direction: row; /* Change flex-direction to row for horizontal layout */
+}
+    
+  .box {
+    width: 100px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px; /* Space between boxes */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .bigbox {
+    width: 100px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px; /* Space between boxes */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Different colors for each box */
+  .red {
+    background-color: #E42626;
+  }
+  
+  .blue {
+    background-color: #1897DE;
+  }
+  
+  .green {
+    background-color: #35F13C;
+  }
+  
+  .pink {
+    background-color: #F917BA;
+  }
+    /* Different colors for font */
+    .r {
+        color: #E42626;
+        font-size: 40px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+      }
+      
+      .b {
+        color: #1897DE;
+        font-size: 40px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+      }
+      
+      .gr {
+        color: #35F13C;
+        font-size: 40px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+      }
+      
+      .p {
+        color: #F917BA;
+        font-size: 40px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+      }
+  /* Styling links */
+  .box a {
+    text-decoration: none;
+    color: white;
+  }
+  .bigbox a {
+    text-decoration: none;
+    color: white;
+    border: black;
+  }
