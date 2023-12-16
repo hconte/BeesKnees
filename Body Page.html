@@ -6,54 +6,89 @@
     <meta charset="utf-8">
     <title> HomeAlone Body Page</title>
     <link rel="stylesheet" href="mystyle.css">
+    <style>
+        /* Internal Style Sheet */
+        h1 {
+            color: #E42626;
+            font-size: 25px;
+            font-weight: normal;
+            font-style:italic;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        main > div {
+            flex: 1;
+            max-width: 48%;  
+        }
+
+        main h3 {
+            margin-top: 20px;  
+        }
+
+        main #padding:last-child {
+            text-align: right; /* Align content to the right */
+        }
+    
+        main h1 span {
+            font-weight: bold; 
+        } 
+    </style>
 </head>
 
 <body>
     <header>
-        <img src="HomeAloneLogo.jpg" alt="logo" width="200" height="150">
+        <a href="index.html"> 
+            <img src="FullLogo_Transparent .png" alt="logo" width="200" height="150">
+        </a>
         <div class="navbar">
-            <div class="box pink"><a href="#">Mind</a></div>
-            <div class="box red"><a href="#">Body</a></div>
-            <div class="box green"><a href="#">Castle</a></div>
-            <div class="box blue"><a href="#">Travel</a></div>
+            <div class="box pink"><a href="Mind Page.html">Mind</a></div>
+            <div class="box red"><a href="Body Page.html">Body</a></div>
+            <div class="box green"><a href="Castle Page.html">Castle</a></div>
+            <div class="box blue"><a href="Travel Page.html">Travel</a></div>
         </div>
     </header>
 
 
-    <main>
-        <div>
-            <p class="r">"Take care of your Body; Its the only place you have to live."</p>
-            <p class="r">-Jim Rohn</p>
+    <main> 
+        <div id="padding">
+            <h1>Take care of your <span>Body</span>; Its the only place you have to live."</h1>
+            <h1>-Jim Rohn</h1>
         </div>
         
-        <div>      
-            <h1>Nutrition</h1>
+        <div id="padding">      
+            <h3>Nutrition</h3>
                 <a href="https://www.seniorresourcesinc.org/senior-care/meals-on-wheels/" target="_blank">Meals on Wheels</a>
                 <a href="https://www.seniorresourcesinc.org/senior-care/senior-care-pantry/" target="_blank">Senior Care Pantry</a>
                 <a href="https://www.seniorresourcesinc.org/senior-care/senior-lunch-bunch/" target="_blank">Senior Lunch Bunch</a>
             </div>  
          
         <div>      
-            <h1>Physical Self Care</h1>
+            <h3>Physical Self Care</h3>
             <a href="https://daybreakcare.com/" target="_blank">DayBreak Adult Care Services, Inc.</a>
             <a href="https://www.solutionsforlivingathome.org/" target="_blank">Solutions For Living At Home</a>
             <a href="https://www.thefriendship.org/" target="_blank">The Friendship</a>
             <a href="https://procasemanagement.com/" target="_blank">Professional Case Management</a>
             <a href="https://www.homeinstead.com/" target="_blank">Home Instead</a>
             <a href="https://www.seniorresourcesinc.org/" target="_blank">Senior Resources</a>
-        </div>div>   
+        </div>   
         <div>      
-            <h1>Medication and Health Care</h1>
+            <h3>Medication and Health Care</h3>
                 <a href="https://www.seniorresourcesinc.org/senior-care/home-care/" target="_blank">Home Care</a>
-        </div>div>   
+        </div>   
        
     </main>
  
     <footer>
-        <a href="SubscriptionForm.html">Subscribe to a Newsletter</a>
-        <p>© 2023 Heidi Conte. All Rights Reserved.</p>
-        <a href="ContactUsForm.html">Contact Us</a>
-    </footer>
+        <div class="footer-content">
+          <a href="SubscriptionForm.html">Subscribe to a Newsletter</a>
+          <p>© 2023 Heidi Conte. All Rights Reserved.</p>
+          <a href="ContactUsForm.html">Contact Us</a>
+        </div>
+      </footer>
 
 </body>
 

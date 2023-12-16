@@ -6,50 +6,84 @@
     <meta charset="utf-8">
     <title> HomeAlone Castle Page</title>
     <link rel="stylesheet" href="mystyle.css">
+    <style>
+        /* Internal Style Sheet */
+        h1 {
+            color: #35F13C;
+            font-size: 24px;
+            font-weight: normal;
+            font-style:italic;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        main > div {
+            flex: 1;
+            max-width: 48%;  
+        }
+
+        main h3 {
+            margin-top: 20px;  
+        }
+
+        main #padding:last-child {
+            text-align: right; /* Align content to the right */
+        }
+    
+        main h1 span {
+            font-weight: bold; 
+        } 
+    </style>
 </head>
 
 <body>
     <header>
-        <img src="HomeAloneLogo.jpg" alt="logo" width="200" height="150">
+        <a href="index.html"> 
+            <img src="FullLogo_Transparent .png" alt="logo" width="200" height="150">
+        </a>
         <div class="navbar">
-            <div class="box pink"><a href="#">Mind</a></div>
-            <div class="box red"><a href="#">Body</a></div>
-            <div class="box green"><a href="#">Castle</a></div>
-            <div class="box blue"><a href="#">Travel</a></div>
+            <div class="box pink"><a href="Mind Page.html">Mind</a></div>
+            <div class="box red"><a href="Body Page.html">Body</a></div>
+            <div class="box green"><a href="Castle Page.html">Castle</a></div>
+            <div class="box blue"><a href="Travel Page.html">Travel</a></div>
         </div>
     </header>
 
 
     <main>
-        <div>
-            <p class="gr">An Orderly Home is a reflection of an orderly mind.  It brings peace, comfort, and a sense of control, which are especially valuable in the golden years of life.</p>
+        <div id="padding">
+            <h1>An <span>Orderly Home</span> is a reflection of an orderly mind.  It brings peace, comfort, and a sense of control, which are especially valuable in the golden years of life.</p>
         </div>
         
-        <div>      
-            <h1>Housekeeping Services</h1>
+        <div id="padding">      
+            <h3>Housekeeping Services</h3>
                 
         </div>  
          
-        <div>      
-            <h1>Waste Management</h1>
+        <div id="padding">      
+            <h3>Waste Management</h3>
             
         </div>   
-        <div>      
-            <h1>Lawn Care</h1>
+        <div id="padding">      
+            <h3>Lawn Care</h3>
                 
         </div>   
-        <div>      
-            <h1>Home Care</h1>
+        <div id="padding">      
+            <h3>Home Care</h3>
                 
         </div>   
     </main>
  
     <footer>
-        <a href="SubscriptionForm.html">Subscribe to a Newsletter</a>
-        <p>© 2023 Heidi Conte. All Rights Reserved.</p>
-        <a href="ContactUsForm.html">Contact Us</a>
-    </footer>
-
+        <div class="footer-content">
+          <a href="SubscriptionForm.html">Subscribe to a Newsletter</a>
+          <p>© 2023 Heidi Conte. All Rights Reserved.</p>
+          <a href="ContactUsForm.html">Contact Us</a>
+        </div>
+      </footer>
 </body>
 
 </html>

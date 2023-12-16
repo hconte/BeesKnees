@@ -6,27 +6,59 @@
     <meta charset="utf-8">
     <title> HomeAlone Mind Page</title>
     <link rel="stylesheet" href="mystyle.css">
+    <style>
+        /* Internal Style Sheet */
+        h1 {
+            color: #F917BA;
+            font-size: 25px;
+            font-weight: normal;
+            font-style:italic;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        main > div {
+            flex: 1;
+            max-width: 48%; /* Adjust as needed for space */
+        }
+
+        main h3 {
+            margin-top: 20px; /* Adjust space between headings */
+        }
+
+        main #padding:last-child {
+            text-align: right; /* Align content to the right */
+        }
+    
+        main h1 span {
+            font-weight: bold; 
+        } 
+    </style>
 </head>
 
 <body>
     <header>
-        <img src="HomeAloneLogo.jpg" alt="logo" width="200" height="150">
+        <a href="index.html"> 
+            <img src="FullLogo_Transparent .png" alt="logo" width="200" height="150">
+        </a>
         <div class="navbar">
-            <div class="box pink"><a href="#">Mind</a></div>
-            <div class="box red"><a href="#">Body</a></div>
-            <div class="box green"><a href="#">Castle</a></div>
-            <div class="box blue"><a href="#">Travel</a></div>
+            <div class="box pink"><a href="Mind Page.html">Mind</a></div>
+            <div class="box red"><a href="Body Page.html">Body</a></div>
+            <div class="box green"><a href="Castle Page.html">Castle</a></div>
+            <div class="box blue"><a href="Travel Page.html">Travel</a></div>
         </div>
     </header>
-
-
+    
     <main>
-        <div>
-            <p class="p">Age is merely the number that the world has been enjoying you. A Healthy Mind ensures that those years are filled with wisdom, joy, and gratitude. </p>
+        <div id="padding">
+            <h1>Age is merely the number that the world has been enjoying you. A<span> Healthy Mind</span> ensures that those years are filled with wisdom, joy, and gratitude. </h1>
         </div>
         
-        <div>      
-            <h1>Managing Correspondence and Finances</h1>
+        <div id="padding">      
+            <h3>Managing Correspondence and Finances</h3>
                 <a href="https://daybreakcare.com/" target="_blank">DayBreak Adult Care Services, Inc.</a>
                 <a href="https://www.solutionsforlivingathome.org/" target="_blank">Solutions For Living At Home</a>
                 <a href="https://www.thefriendship.org/" target="_blank">The Friendship</a>
@@ -35,25 +67,27 @@
                 <a href="https://www.seniorresourcesinc.org/" target="_blank">Senior Resources</a>
         </div>   
          
-        <div>      
-            <h1>Social Welfare and Engagement</h1>
+        <div id="padding">      
+            <h3>Social Welfare and Engagement</h3>
                 <a href="https://louriecentersc.com/" target="_blank">The Lourie Center</a>
         </div>  
-        <div>      
-            <h1>Pet Care</h1>
+        <div id="padding">      
+            <h3>Pet Care</h3>
                 <a href="https://scav.org/sc-vets-care-foundation/" target="_blank">SC Vets Care Foundation</a>
         </div>   
-        <div>      
-            <h1>Exercise and Fitness</h1>
+        <div id="padding">      
+            <h3>Exercise and Fitness</h3>
                 <a href="https://louriecentersc.com/" target="_blank">The Lourie Center</a>
         </div>   
     </main>
  
     <footer>
-        <a href="SubscriptionForm.html">Subscribe to a Newsletter</a>
-        <p>© 2023 Heidi Conte. All Rights Reserved.</p>
-        <a href="ContactUsForm.html">Contact Us</a>
-    </footer>
+        <div class="footer-content">
+          <a href="SubscriptionForm.html">Subscribe to a Newsletter</a>
+          <p>© 2023 Heidi Conte. All Rights Reserved.</p>
+          <a href="ContactUsForm.html">Contact Us</a>
+        </div>
+      </footer>
 
 </body>
 

@@ -1,27 +1,33 @@
  /* Resetting default margin and padding */
- body {
+ html, body {
     background-color: #FFFBEB;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
      }
  body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
   }
-  
+  .content {
+    /* Set a minimum height to push footer to bottom */
+    min-height: calc(100vh - (height of footer));
+     }
  .navbar {
     position: fixed;
-    top: 10px; /* Adjust the top position as needed */
-    right: 10px; /* Adjust the right position as needed */
+    top: 10px; 
+    right: 10px; 
     display: flex;
   }
   .bignavbar {
     display: flex;
     flex-direction: row; /* Change flex-direction to row for horizontal layout */
+    justify-content: center;
+    height: 150vh; 
 }
     
   .box {
-    width: 100px; /* Adjust width as needed */
-    height: 40px; /* Adjust height as needed */
+    width: 100px; 
+    height: 40px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,11 +35,12 @@
     font-family: Arial, sans-serif;
     font-weight: bold;
     color: white;
+    border: 2px solid #000; 
   }
   
   .bigbox {
-    width: 100px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
+    width: 125px; 
+    height: 140px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,8 +48,18 @@
     font-family: Arial, sans-serif;
     font-weight: bold;
     color: white;
-  }
-  
+    text-align: center; /* Horizontally center the text */
+    border: 2px solid #000; 
+    box-sizing: border-box; 
+}
+    
+
+/* Vertically center the text */
+.bigbox span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
   /* Different colors for each box */
   .red {
     background-color: #E42626;
@@ -83,7 +100,7 @@
         font-size: 40px;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
       }
-  /* Styling links */
+ 
   .box a {
     text-decoration: none;
     color: white;
@@ -93,3 +110,50 @@
     color: white;
     border: black;
   }
+#padding {
+  padding: 10px;
+  height: 40px;
+  background-color:#FFFBEB;
+}
+/* styles for left-aligned content */
+.left-align {
+  text-align: left;
+  background-color:#FFFBEB;
+}
+
+/* styles for center-aligned content */
+.center-align {
+  text-align: center;
+  padding: 200px
+  background-color:#FFFBEB;
+}
+
+/* styles for right-aligned content */
+.right-align {
+  text-align: right;
+  background-color:#FFFBEB;
+}
+footer {
+  /* Set the footer to the bottom of the page */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fffbeb; 
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* Evenly space items */
+  padding: 20px; 
+}
+
+.footer-content a {
+  text-decoration:underline; 
+  color:blue; 
+}
+.footer-content p {
+  color: black;
+}
+main a {
+  display: block; /* Display links as block-level elements */
+  margin-bottom: 10px; /* Adjust space between links */
+}

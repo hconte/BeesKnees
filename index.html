@@ -6,44 +6,70 @@
     <meta charset="utf-8">
     <title> HomeAlone Home Page</title>
     <link rel="stylesheet" href="mystyle.css">
+    <style>
+        /* Internal stylesheet */
+        h1 {
+            color:#1897DE;
+        }
+        main h2 {
+            font-weight: bold; /* Makes the text in <h2> bold */
+            color: #1897DE; /* Changes the color of the text to blue */
+            text-align: center; /* Center-align the text */
+        }
+        /* Style for the word 'Help' within h2 */
+        main h2 span {
+            font-style: italic; 
+            color: red; 
+        }
+         /* Increase font size for the paragraph */
+         main p {
+            font-size: 17px;  
+        }
+        main p span {
+            font-weight: bold; 
+        } 
+    </style>
 </head>
 
 <body>
     <header>
-        <img src="HomeAloneLogo.jpg" alt="logo" width="200" height="150">
+        <img src="FullLogo_Transparent .png" alt="logo" width="200" height="150">
         <div class="navbar">
-            <div class="box pink"><a href="#">Mind</a></div>
-            <div class="box red"><a href="#">Body</a></div>
-            <div class="box green"><a href="#">Castle</a></div>
-            <div class="box blue"><a href="#">Travel</a></div>
+            <div class="box pink"><a href="Mind Page.html">Mind</a></div>
+            <div class="box red"><a href="Body Page.html">Body</a></div>
+            <div class="box green"><a href="Castle Page.html">Castle</a></div>
+            <div class="box blue"><a href="Travel Page.html">Travel</a></div>
         </div>
     </header>
 
-
     <main>
-        <div>
+        <div id="padding">
             <h1>Uncle Ransome is Home Alone!!</h1>
-            <p>HomeAlone.com is an informational website about resources available to elderly residents
-            living (alone) in Richland County, Columbia, South Carolina</p>
         </div>
-        
-        <div>      
-        <h2>Help Can Be On The Way:</h2>
+        <div id="padding">
+            <p><span>HomeAlone.com</span> is an informational website about resources available to elderly residents
+            living (alone) in Columbia, South Carolina.</p>
+        </div>
+        <div id="padding">      
+            <h2><span>Help</span> Can Be On The Way:</h2>
+        </div>
         <div class="bignavbar">
-            <div class="bigbox pink"><a href="#"></a>Maintain a Healthy Mind</a></div>
-            <div class="bigbox red"><a href="#">Maintain a Healthy Body</a></div>
-            <div class="bigbox green"><a href="#">Maintain an Orderly Castle</a></div>
-            <div class="bigbox blue"><a href="#">Travel About Town</a></div>
-        </div>
+            <div class="bigbox pink"><a href="Mind Page.html"></a>Maintain a Healthy Mind</a></div>
+            <div class="bigbox red"><a href="Body Page.html">Maintain a Healthy Body</a></div>
+            <div class="bigbox green"><a href="Castle Page.html">Maintain an Orderly Castle</a></div>
+            <div class="bigbox blue"><a href="Travel Page.html">Travel About Town</a></div>
         </div>
     </main>
  
-    <footer>
-        <a href="SubscriptionForm.html">Subscribe to a Newsletter</a>
-        <p>© 2023 Heidi Conte. All Rights Reserved.</p>
-        <a href="ContactUsForm.html">Contact Us</a>
-    </footer>
-
+<footer>
+    <div class="footer-content">
+      <a href="SubscriptionForm.html">Subscribe to a Newsletter</a>
+      <p>© 2023 Heidi Conte. All Rights Reserved.</p>
+      <a href="ContactUsForm.html">Contact Us</a>
+    </div>
+  </footer>
 </body>
 
 </html>
+
+  
